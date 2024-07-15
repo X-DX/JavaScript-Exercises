@@ -60,3 +60,31 @@ console.log("==",aa == "Arup");
 let bb = 10;
 let cc = "10";
 console.log("===",bb === cc);
+
+// Task 11
+let isLoggin = true;
+let userName = "Arup";
+if( isLoggin == true && userName != ''){
+    console.log("Login Successfully");
+}
+
+// Task 12
+let appStatus = "Submitted";
+let userRole = "DA";
+if(appStatus == "Submitted" || userRole == "DA"){
+    console.log("Application is Under Process");
+}
+
+// Task 13
+let ageMy = 10;
+if(!ageMy){
+    console.log("Age is empty");
+}
+else{
+    console.log("Age is not empty");
+}
+
+// Task 14
+let myNum = -2;
+console.log(myNum > 0 ? "The number is positive." : (myNum < 0 ? "The number is negative." : "The number is zero."));
+
