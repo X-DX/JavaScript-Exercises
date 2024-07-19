@@ -43,3 +43,31 @@ function getSum(total, num) {
 }
 
 console.log("Reduce", numbers.reduce(getSum, 0));
+
+// Task 10
+const array = ['apple', 'banana', 'cherry', 'date'];
+
+for (let i = 0; i < array.length; i++) {
+    console.log(array[i]);
+}
+
+// Task 11
+const array2 = ['apple', 'banana', 'cherry', 'date'];
+
+array2.forEach(element => {
+    console.log(element);
+});
+
+
+// Task 12
+const matrix = [
+  [1, 2, 3],
+  [4, 5, 6],
+  [7, 8, 9]
+];
+
+console.log(matrix);
+
+// Task 13
+const element = matrix[1][2];
+console.log(element);
