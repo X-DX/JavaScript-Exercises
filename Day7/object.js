@@ -66,7 +66,7 @@ const library2 = {
     getDetails: function() {
         let titles = [];
         for (let key in this) {
-            if (this[key].title) {
+            if (typeof this[key] === 'object' && this[key].title) {
                 titles.push(this[key].title);
             }
         }
@@ -92,4 +92,18 @@ const library3 = {
 // console.log(ibrary3.getDetails());
 
 // Task 8
+for(const key in library3){
+    console.log(`Key is: ${key} and the value is:${library3[key]}`);
+}
 
+// Task 9
+// Log all the keys of the library2 object
+console.log("Keys:", Object.keys(library2));
+
+// Log all the values of the library2 object
+console.log("Values:", Object.values(library2));
+
+// If you want to log the keys and values of nested objects too, you can do the following:
+Object.keys(library2).forEach(key => {
+    console.log(`Key: ${key}, Value: ${JSON.stringify(library2[key])}`);
+});
