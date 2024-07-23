@@ -18,6 +18,54 @@
     <div id="myElement">
         <p>Hello This is JavaScript</p>
     </div>
+
+    <div>
+        <input type="text" id="myInput" placeholder="Type something...">
+    </div>
+
+    <div>
+        <p id="keyupid">Your Typing</p>
+        <input type="text" id="myInputId" placeholder="Type something...">
+    </div>
+
+    <div style="margin-top: 40px;padding: 2px; background-color: aqua;">
+        <form id="myForm">
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name">
+            <br>
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email">
+            <br>
+            <button type="submit">Submit</button>
+        </form>
+    </div>
+
+    <div style="margin-top: 40px;padding: 2px; background-color: rgb(13, 240, 89);">
+        <label for="mySelect">Choose an option:</label>
+        <select id="mySelect">
+            <option value="Option 1">Option 1</option>
+            <option value="Option 2">Option 2</option>
+            <option value="Option 3">Option 3</option>
+        </select>
+        <p id="displaySelected">Selected value: </p>
+    </div>
+
+    <div style="margin-top: 40px;padding: 2px; background-color: rgb(191, 240, 13);">
+        <ul id="myList">
+            <li>Item 1</li>
+            <li>Item 2</li>
+            <li>Item 3</li>
+            <li>Item 4</li>
+        </ul>
+    </div>
+
+    <div id="parent" style="margin-top: 40px;padding: 2px; background-color: rgb(240, 13, 236);">
+        <button id="addChild">Add Child</button>
+        <ul id="childList">
+            <!-- Dynamically added list items will appear here -->
+        </ul>
+    </div>
+
 </body>
 <script src="script.js"></script>
 </html>
